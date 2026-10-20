@@ -1,0 +1,82 @@
+.footer {
+  background-color: #5f9f64; /* light yellowish background */
+  color: #f6fef7; /* dark green text */
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  color: #f9a825; /* vibrant yellow */
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section ul li a {
+  color: #daeadb;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-title {
+  color: #f9a825;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.footer-subtitle {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #45763f;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #4b4b4b;
+}
+/* App.css ya jis file me CSS likhi ho usme */
+.logo-img {
+  width: 150px; /* ya jitna size chahiye utna rakh sakti ho */
+  height: auto; /* proportion maintain karne ke liye */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+  }
+}

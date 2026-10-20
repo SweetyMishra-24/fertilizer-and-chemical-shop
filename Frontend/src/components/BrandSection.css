@@ -1,0 +1,39 @@
+.brand-section {
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.brand-section h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.brands-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.brand-logo {
+  width: 100px;
+  height: 100px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.brand-logo:hover {
+  transform: scale(1.1);
+}

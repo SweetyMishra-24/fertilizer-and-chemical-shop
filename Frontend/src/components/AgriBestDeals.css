@@ -1,0 +1,126 @@
+.agri-deals-full-container {
+  width: 100%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7fff7;
+}
+
+.header-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
+
+.header-slider h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.show-all-link {
+  font-weight: 600;
+  color: #2e7d32;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.show-all-link:hover {
+  color: #145214;
+}
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  flex-grow: 1;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  background-color: #e8f5e9;
+  min-width: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.info {
+  padding: 0.8rem 1rem 1rem;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 0 0.4rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price {
+  font-weight: 700;
+  color: #388e3c;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.slider-btn {
+  background-color: #2e7d32;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.slider-btn:hover {
+  background-color: #145214;
+}
+
+.left-btn {
+  margin-right: 0.5rem;
+}
+
+.right-btn {
+  margin-left: 0.5rem;
+}

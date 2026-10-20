@@ -1,0 +1,61 @@
+.popular-container {
+  background: linear-gradient(to bottom right, #e0f7df, #b2ebc8);
+  padding: 2rem;
+  border-radius: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* Wrapper that allows horizontal scroll if needed */
+.slider-wrapper {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+/* Slider stays inline, doesn't overflow the page */
+.slider {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  min-width: 100%;
+}
+
+/* Individual product card styles */
+.product-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  min-width: 250px;
+  flex: 0 0 auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 1rem 0;
+  color: #388e3c;
+  font-size: 1.2rem;
+}
+
+.show-btn {
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.show-btn:hover {
+  background-color: #4caf50;
+}
